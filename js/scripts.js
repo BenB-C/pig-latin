@@ -17,8 +17,7 @@ $(document).ready(function() {
 });
 
 // Returns the pig latin version of a word. Assumes given userText is not the empty string.
-function igpayAtinlay(userText) {
-  var word = userText;
+function igpayAtinlay(word) {
   var firstLetter = word[0];
 
   if (isVowel(firstLetter) && firstLetter.toLowerCase() !== 'y') {
@@ -37,7 +36,7 @@ function igpayAtinlay(userText) {
     return word + 'ay';
   }
 
-  return userText;
+  return word;
 }
 
 function isVowel(letter) {
