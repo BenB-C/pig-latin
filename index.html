@@ -6,15 +6,17 @@
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title></title>
+    <title>Pig Latin Translator</title>
   </head>
   <body>
+    <h1>Pig Latin Translator</h1>
     <form id="pigLatin">
       <!-- Input -->
-      <h2>Enter some words:</h2>
-      <h3>Don't enter non alphabetical characters</h3>
+      <h3>Enter the English text that you want translated into Pig Latin:</h3>
       <div class="form-group">
-        <input id="userInput" type="text" name="plainText" value="" pattern="[a-zA-Z]*">
+        <!-- only allow letters in input: -->
+        <!-- <input id="userInput" type="text" name="plainText" value="" pattern="[a-zA-Z]*"> -->
+        <input id="userInput" type="text" name="plainText">
         <button type="submit" class="btn btn-primary">Ubmitsay</button>
       </div>
     </form>
